@@ -1,0 +1,13 @@
+{
+  "name": "static-memes-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static, GitHub Pages-hosted mirror of the justmeme.wtf meme API (JSON + self-hosted images).",
+  "scripts": {
+    "build": "node generate.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
