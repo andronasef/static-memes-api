@@ -177,7 +177,7 @@ async function main() {
     });
   }
   const allShaped = imgflip.map(shape);
-  const categoriesOut = [...categories, { slug: 'all', name: 'all', count: allShaped.length }];
+  const categoriesOut = [{ slug: 'all', name: 'all', count: allShaped.length }, ...categories];
 
   // Flat mirror of the API surface.
   await writeJSON('api/v1/templates.json', { success: true, total: shaped.length, templates: shaped });
